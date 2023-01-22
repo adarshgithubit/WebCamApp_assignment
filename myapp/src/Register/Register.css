@@ -1,0 +1,22 @@
+.register{
+    width: 500px;
+    background: #fff;
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    padding: 1rem;
+    align-items: centre;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.register > input{
+    border-radius: 8px;;
+    border: 2px solid #dddfe2;
+    outline: none;
+    color: black;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0.75rem;
+    width: 90%;
+    height: auto;
+    font-size: 1rem;
+}
