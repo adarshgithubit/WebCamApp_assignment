@@ -2,7 +2,6 @@ import React from 'react'
 import "./HomePage.css"
 import  { useEffect, useRef } from "react";
  
-import Webcam from "react-webcam";
 
 const HomePage = () => {
   let videoRef = useRef(null);
@@ -57,19 +56,24 @@ const HomePage = () => {
 
   return (
     <>
-     <div className="container">
-      <h1 className="text-center">Camera Selfie App in React</h1>
+     
+      <div className="container">
+
+
+      <h1>Camera Selfie App in React</h1>
+     
  
       <video ref={videoRef} className="container"></video>
  
-      <button onClick={takePicture} className="btn btn-danger container">Take Picture</button>
+      <button onClick={takePicture} className="btn">Take Picture</button>
  
-      <canvas className="container" ref={photoRef}></canvas>
+      <canvas  ref={photoRef}></canvas>
  
-      <button onClick={clearImage} className="btn btn-primary container">Clear Image</button>
+      <button onClick={clearImage} className="btn">Clear Image</button>
  
       <br/><br/>
-    </div>
+      </div>
+
     </>
   )
 }
